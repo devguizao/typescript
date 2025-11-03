@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* Diretórios */
+    "rootDir": "./",             // Onde ficam os arquivos .ts
+    "outDir": "./dist",          // Onde os .js compilados serão salvos
+
+    /* Compatibilidade com navegadores */
+    "target": "ES6",             // Código de saída compatível com browsers modernos
+    "module": "ES6",             // Usa módulos padrão ES (não CommonJS)
+    "moduleDetection": "force",
+    "lib": ["ES6", "DOM"],       // Inclui APIs de navegador (como console, document, etc.)
+
+    /* Qualidade e segurança */
+    "strict": true,              // Ativa checagem de tipos mais rigorosa
+    "skipLibCheck": true,        // Ignora checagem de libs externas
+    "forceConsistentCasingInFileNames": true,
+
+    /* Mapas de código para depuração */
+    "sourceMap": true            // Gera arquivos .map para debug no navegador
+  }
+}
