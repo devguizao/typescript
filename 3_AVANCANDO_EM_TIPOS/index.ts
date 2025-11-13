@@ -120,3 +120,96 @@ function showUserRole(role: boolean | string) {
 
 console.log(showUserRole(false))
 console.log(showUserRole("Admin"))
+
+//12 - type alias
+type ID = string | number
+
+function showId(id: ID){
+    console.log(`O ID é: ${id}`)
+}
+
+showId(1)
+showId("200")
+showId(123)
+
+//13 - Interface
+interface Point {
+    x: number
+    y: number
+    z: number
+}
+
+function showCoords(obj: Point) {
+    console.log(`X: ${obj.x} Y: ${obj.y} Z: ${obj.z}`)
+}
+
+const coordObj:Point = {
+    x: 10,
+    y: 15,
+    z: 20
+}
+
+showCoords(coordObj)
+
+//14 - interface x type alias
+interface Person {
+    name : String
+}
+
+interface Person{
+    age: Number
+}
+
+const somePerson: Person = {name: "Guizao", age: 30}
+
+console.log(somePerson)
+
+type personType = {
+    name: string
+}
+
+// type personType = {
+// age: number
+//}
+
+//15 - literal types
+let test: "qual é a direção"
+
+test = "qual é a direção"
+
+console.log(test)
+
+function showDirection(direction: "left" | "right" | "center"){
+    console.log(`A direção é: ${direction}`)
+}
+
+showDirection("left")
+
+//showDirection("top")
+
+//16 - non-null Assertion operators
+
+const p = document.getElementById("some-p")
+
+console.log(p!.innerText)
+
+//17 - bigint
+let n: bigint
+
+// n = 1
+
+n = 1000n
+
+console.log(n)
+
+console.log(typeof n)
+
+console.log(n + 10001n)
+
+//18 - symbol
+
+let symbolA:symbol = Symbol("a") 
+let symbolB = Symbol("a") 
+
+console.log(symbolA == symbolB)
+console.log(symbolA === symbolB)
