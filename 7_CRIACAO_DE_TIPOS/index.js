@@ -29,5 +29,35 @@ const server = {
     ram: '32GB'
 };
 console.log(getSomeKey(server, 'ram'));
+function showCharName(obj, key) {
+    return `${obj[key]}`;
+}
+const myChar = {
+    name: "Guizao",
+    age: 24,
+    hasDriveLicense: true
+};
+console.log(showCharName(myChar, 'name'));
+console.log(showCharName(myChar, 'age'));
+//6 - typeof type operator
+const userName = "Guizao";
+const userName2 = "Joao";
+const userName4 = "Joaquim";
+const newTruck = {
+    km: 10000,
+    hr: 5000,
+    description: "Caminhao para pouca carga"
+};
+function showKm(value) {
+    console.log(`O veículo tem a km de: ${value}`);
+}
+showKm(newTruck.km);
+const newCar = {
+    km: 5000,
+    hr: 12000
+};
+showKm(newCar.km);
+const someVar = 5;
+const testing = "some text";
 export {};
 //# sourceMappingURL=index.js.map
