@@ -447,4 +447,4 @@ class Cat {
 
 const doguinho: Dog = new Cat()
 
-console.log(doguinho)
+console.log(doguinho);
