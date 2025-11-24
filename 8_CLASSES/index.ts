@@ -445,6 +445,6 @@ class Cat {
     name!: string
 }
 
-const doguinho: Dog = new Cat()
+const dogao: Dog = new Cat()
 
-console.log(doguinho);
+console.log(dogao)

@@ -279,7 +279,7 @@ class Dog {
 }
 class Cat {
 }
-const doguinho = new Cat();
-console.log(doguinho);
+const dogao = new Cat();
+console.log(dogao);
 export {};
 //# sourceMappingURL=index.js.map
